@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/index.min.css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <div
+      class="bg-gradient-to-br from-indigo-700 to-pink-300 h-screen grid place-items-center"
+    >
+      <!-- center div start-->
+      <div
+        class="w-lg grid place-items-center p-10 rounded-3xl bg-slate-100/10 drop-shadow-xl border-2 border-gray-300/10 text-white font-thin"
+      >
+        <img
+          src="https://media-exp1.licdn.com/dms/image/D5635AQFW6Rj3MdNDsg/profile-framedphoto-shrink_200_200/0/1662801733611?e=1665399600&v=beta&t=0KEN-sOM09AqNOrDQbhW5xM3TR3kxGP-_Xgy7Tay4Os"
+          alt=""
+          class="rounded-full drop-shadow-md border-8 border-gray-300/50 w-5/6"
+        />
+        <h2 class="text-3xl pt-3">John Doe</h2>
+        <p class="text-sm">I am known for my aesthetic techniques</p>
+        <div class="grid grid-cols-3 w-full py-3 divide-x">
+          <div class="grid place-items-start w-full">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              strokeWidth="{1.5}"
+              stroke="currentColor"
+              className="w-6 h-6"
+              class="w-6"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z"
+              />
+            </svg>
+          </div>
+          <div class="grid place-items-center w-full">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              strokeWidth="{1.5}"
+              stroke="currentColor"
+              className="w-6 h-6"
+              class="w-6"
+            >
+              <path
+                strokeLinecap="round"
+                d="M16.5 12a4.5 4.5 0 11-9 0 4.5 4.5 0 019 0zm0 0c0 1.657 1.007 3 2.25 3S21 13.657 21 12a9 9 0 10-2.636 6.364M16.5 12V8.25"
+              />
+            </svg>
+          </div>
+          <div class="grid place-items-end w-full">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              strokeWidth="{1.5}"
+              stroke="currentColor"
+              className="w-6 h-6"
+              class="w-6"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                d="M8.625 12a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0H8.25m4.125 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0H12m4.125 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0h-.375M21 12c0 4.556-4.03 8.25-9 8.25a9.764 9.764 0 01-2.555-.337A5.972 5.972 0 015.41 20.97a5.969 5.969 0 01-.474-.065 4.48 4.48 0 00.978-2.025c.09-.457-.133-.901-.467-1.226C3.93 16.178 3 14.189 3 12c0-4.556 4.03-8.25 9-8.25s9 3.694 9 8.25z"
+              />
+            </svg>
+          </div>
+        </div>
+
+        <button
+          class="rounded-lg border border-gray-300/10 p-2 mt-3 bg-gradient-to-br from-indigo-300/75 to-pink-200/75 drop-shadow-sm hover:bg-purple-500"
+          data-bs-toggle="modal"
+          data-bs-target="#patientInfo"
+          type="button"
+        >
+          View patient information
+        </button>
+      </div>
+      <!-- center div  end-->
+    </div>
+
+    <!-- Modal -->
+    <div
+      class="modal fade fixed bottom-0 left-0 hidden w-full h-screen outline-none overflow-x-hidden overflow-y-auto bg-white/10 backdrop-blur"
+      id="patientInfo"
+      tabindex="-1"
+      aria-labelledby="exampleModalXlLabel"
+      aria-modal="true"
+      role="dialog"
+    >
+      <div
+        class="modal-dialog modal-lg absolute inset-x-0 bottom-0 m-0 mx-auto p-0 grid grid-cols-3 divide-x-2 divide-slate-300 p-5 pb-10 text-slate-500 rounded-t-3xl bg-slate-200 backdrop-blur-sm"
+      >
+        <div class="grid place-items-center pr-3 mt-5">
+          <img
+            src="https://media-exp1.licdn.com/dms/image/D5635AQFW6Rj3MdNDsg/profile-framedphoto-shrink_200_200/0/1662801733611?e=1665399600&v=beta&t=0KEN-sOM09AqNOrDQbhW5xM3TR3kxGP-_Xgy7Tay4Os"
+            alt=""
+            class="rounded-full drop-shadow-md border-8 border-white w-5/6"
+          />
+          <h2 class="text-2xl pt-3">John Doe</h2>
+          <p class="text-xs text-center">
+            I am known for my aesthetic techniques
+          </p>
+        </div>
+        <div class="col-span-2 px-4 mt-5">
+          <h2 class="pl-3 font-bold text-xl">Patient Information</h2>
+          <div class="divide-y divide-slate-300 pl-3 my-2">
+            <div class="grid grid-cols-2 py-2">
+              <span>Birthday</span>
+              <span class="text-end">January 1,1970</span>
+            </div>
+            <div class="grid grid-cols-2 py-2">
+              <span>Age</span>
+              <span class="text-end">99</span>
+            </div>
+            <div class="grid grid-cols-2 py-2">
+              <span>Gender</span>
+              <span class="text-end">Male</span>
+            </div>
+            <div class="grid grid-cols-2 py-2">
+              <span>Weight</span>
+              <span class="text-end">150 lbs</span>
+            </div>
+            <div class="grid grid-cols-2 py-2">
+              <span>Height</span>
+              <span class="text-end">6'0"</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/index.min.js"></script>
+  </body>
+</html>
